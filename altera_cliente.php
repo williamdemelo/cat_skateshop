@@ -3,6 +3,7 @@
 	include "templates/menu_horizontal.php";
 
 	if($con) {
+		//Perrota viadinho
 		$sql = "select * from cliente where id_cliente=".$_GET['id'];
 		$rs = mysql_query($sql, $con);
 		if ($rs) {
